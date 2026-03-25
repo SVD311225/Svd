@@ -87,8 +87,11 @@
             color: #fff;
         }
 
-        .logo img {
+        /* Updated CSS to handle the video logo */
+        .logo img, .logo video {
             height: 40px;
+            object-fit: contain;
+            filter: none; /* Ensures no blur is ever applied here */
         }
 
         .nav-links {
@@ -413,7 +416,9 @@
 
     <nav id="navbar">
         <div class="logo">
-            <img src="SVD_logo.png" alt="SVD Logo">
+            <video autoplay loop muted playsinline>
+                <source src="Video1.mp4" type="video/mp4">
+            </video>
             STEALTHVECTOR DYNAMICS
         </div>
         <div class="nav-links">
@@ -469,7 +474,7 @@
                 <div class="product-img-container">
                     <img src="SV-XAngel.png" alt="SV-XAngel Prototype">
                 </div>
-                <p class="img-disclaimer">*it is for representation. actual product may vary</p>
+                <p class="img-disclaimer">*it is for representation, actual product may vary</p>
             </div>
         </div>
 
@@ -488,7 +493,7 @@
                 <div class="product-img-container">
                     <img src="SV-FPV_10.png" alt="SV-FPV 10 Drone">
                 </div>
-                <p class="img-disclaimer">*it is for representation. actual product may vary</p>
+                <p class="img-disclaimer">*it is for representation, actual product may vary</p>
             </div>
         </div>
     </section>
@@ -497,7 +502,9 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <div class="logo">
-                    <img src="SVD_logo.png" alt="SVD Logo">
+                    <video autoplay loop muted playsinline>
+                        <source src="Video1.mp4" type="video/mp4">
+                    </video>
                     STEALTHVECTOR DYNAMICS
                 </div>
                 <p>Redefining the horizon of autonomous flight and deep-tech aerospace systems.</p>
@@ -516,7 +523,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2026 StealthVector Dynamics. All rights reserved.
+            &copy; 2026 StealthVector Dynamics Private Limited. All rights reserved.
         </div>
     </footer>
 
